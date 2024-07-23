@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyVibes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PyVibes</h1>
+    </header>
+    <main>
+        <div class="video-container">
+            <video controls>
+                <source src="your-video-url.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-info">
+                <h2>Video Title</h2>
+                <div class="buttons">
+                    <button id="likeButton">👍 Like <span id="likeCount">0</span></button>
+                    <button id="dislikeButton">👎 Dislike <span id="dislikeCount">0</span></button>
+                </div>
+                <div class="comments">
+                    <h3>Comments</h3>
+                    <form id="commentForm">
+                        <input type="text" id="commentInput" placeholder="Add a comment" required>
+                        <button type="submit">Comment</button>
+                    </form>
+                    <ul id="commentsList"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
